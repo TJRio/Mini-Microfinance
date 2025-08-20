@@ -1,0 +1,359 @@
+/* --- Google Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* --- CSS Variables for Professional Color Scheme --- */
+:root {
+    --primary-color: #0a4d9e; /* A strong, trustworthy blue */
+    --secondary-color: #00c853; /* A vibrant green for success/growth */
+    --dark-color: #23242a;
+    --light-color: #f4f4f4;
+    --body-font: 'Poppins', sans-serif;
+}
+
+/* --- Basic Body Styling --- */
+body {
+    font-family: var(--body-font);
+    background-color: var(--light-color);
+    color: #333;
+}
+
+/* --- Navigation Bar Styling --- */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.navbar .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--dark-color);
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar .nav-link:hover, .navbar .nav-link.active {
+    color: var(--primary-color);
+}
+
+.btn-login {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 25px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #00a042;
+    color: #fff;
+}
+
+
+/* --- Footer Styling --- */
+.footer {
+    background-color: var(--dark-color);
+    color: #fff;
+    padding: 2rem 0;
+    margin-top: 4rem; /* Adds space above the footer */
+}
+
+.footer p {
+    margin: 0;
+}
+/* --- Hero Section Styling --- */
+.hero-section {
+    background: linear-gradient(rgba(10, 77, 158, 0.8), rgba(10, 77, 158, 0.8)), url('https://images.unsplash.com/photo-1579621970795-87f54f597fab?q=80&w=2070&auto=format&fit=crop') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero-btn {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #00a042;
+    transform: translateY(-3px); /* Adds a subtle lift effect */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* --- General Section Styling --- */
+.section-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Adds the underline effect */
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+/* --- Services Highlight Section --- */
+.services-highlight-section {
+    background-color: #fff;
+}
+
+.service-card {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+
+/* --- Simple Fade-In Animation --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* --- "About Us" Page Specific Styling --- */
+
+/* --- Page Header Styling --- */
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1500x400/23242a/FFFFFF?text=Our+Vision');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 60px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Override for left-aligned section titles */
+.section-title.text-start::after {
+    left: 0;
+    transform: translateX(0);
+}
+
+/* --- Team Section Styling --- */
+.team-section {
+    background-color: #ffffff;
+}
+
+.team-card {
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #e9ecef;
+}
+/* --- "Services" Page Specific Styling --- */
+
+.detailed-services .row {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Stagger the animation for each row */
+.detailed-services .row:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.detailed-services .row:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.service-features li {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.feature-icon {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+/* --- Simple Fade-In-Up Animation --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* --- Login & Registration Form Styling --- */
+
+.form-page-main {
+    padding: 4rem 0;
+    min-height: 80vh; /* Ensures footer is pushed down */
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.form-container .form-control,
+.form-container .form-select {
+    min-height: 48px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.form-container .form-control:focus,
+.form-container .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(10, 77, 158, 0.25);
+}
+
+.form-container .hero-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+/* --- Client Dashboard Styling --- */
+.dashboard-body {
+    background-color: #f8f9fa; /* A slightly off-white background */
+}
+
+.dashboard-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+}
+
+.dashboard-card .card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.balance-display {
+    text-align: center;
+    padding: 1rem;
+}
+
+.balance-label {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+.balance-amount {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.table-hover tbody tr:hover {
+    background-color: #eef5ff;
+}
+
+/* Status Badge Styling */
+.status-badge {
+    padding: 0.3em 0.6em;
+    border-radius: 10px;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.status-completed {
+    background-color: #d4edda;
+    color: #155724;
+}
+.status-pending {
+    background-color: #fff3cd;
+    color: #856404;
+}
+.status-rejected {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+/* --- Admin Pages General Styling --- */
+.admin-login-body {
+    background-color: #f1f4f8; /* A cool, light grey for admin area */
+}
+/* --- Admin Dashboard Styling --- */
+.admin-dashboard-body {
+    background-color: #f1f4f8;
+}
+
+.stat-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.stat-card-body {
+    padding: 1.5rem;
+}
+
+.stat-card-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.stat-card-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.btn-approve {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #fff;
+}
+.btn-approve:hover {
+    background-color: #00a042;
+    border-color: #00a042;
+     color: #fff;
+}
+
+.btn-reject {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+}
+.btn-reject:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+    color: #fff;
+}

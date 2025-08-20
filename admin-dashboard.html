@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Unity MFI</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-dashboard-body">
+
+    <!-- ========== NAVIGATION BAR ========== -->
+    <nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="admin-dashboard.html">Unity MFI - Admin Dashboard</a>
+        <ul class="navbar-nav ms-auto">
+           <li class="nav-item">
+              <button id="adminLogoutButton" class="btn btn-danger">Logout</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ========== MAIN DASHBOARD CONTENT ========== -->
+    <main class="container py-5">
+        <!-- Loading Spinner -->
+        <div id="loader" class="text-center mt-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p>Loading admin data...</p>
+        </div>
+
+        <!-- Dashboard Content (hidden until data loads) -->
+        <div id="adminDashboardContent" class="d-none">
+            <!-- Stat Cards -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="stat-card text-bg-primary">
+                        <div class="stat-card-body">
+                            <h5 class="stat-card-title">Total Clients</h5>
+                            <p id="totalClients" class="stat-card-value">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-card text-bg-success">
+                        <div class="stat-card-body">
+                            <h5 class="stat-card-title">Total Savings (XAF)</h5>
+                            <p id="totalSavings" class="stat-card-value">0</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="stat-card text-bg-warning">
+                        <div class="stat-card-body">
+                            <h5 class="stat-card-title">Pending Transactions</h5>
+                            <p id="pendingTransactions" class="stat-card-value">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pending Transactions Table -->
+            <div class="dashboard-card shadow-sm">
+                <h3 class="card-title">Pending Transaction Approvals</h3>
+                <p class="text-muted">Review and process all pending deposits and withdrawals.</p>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Date</th>
+                                <th>Client Name</th>
+                                <th>Type</th>
+                                <th>Amount (XAF)</th>
+                                <th>Reference/Note</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="pendingTransactionsTableBody">
+                            <!-- Rows will be populated by JavaScript -->
+                            <tr><td colspan="6" class="text-center">No pending transactions.</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+
+    <!-- Firebase Configuration & Initialization -->
+    <script src="js/firebase-config.js"></script>
+    <script>
+      firebase.initializeApp(firebaseConfig);
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+    </script>
+    
+    <!-- Your Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
