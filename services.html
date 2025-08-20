@@ -3,134 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Unity Microfinance & Credit Union</title>
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
-    <!-- Your Custom CSS -->
+    <title>Our Services | Unity Microfinance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-
-    <!-- ========== NAVIGATION BAR ========== -->
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container">
         <a class="navbar-brand" href="index.html">Unity MFI</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="services.html">Services</a>
-            </li>
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
           </ul>
-          <ul class="navbar-nav ms-auto">
-             <li class="nav-item">
-                <a href="client-login.html" class="btn btn-login">Client Login</a>
-            </li>
-          </ul>
+          <a href="client-login.html" class="btn btn-login d-none d-lg-block">Client Login</a>
         </div>
       </div>
     </nav>
-
-    <!-- ========== MAIN CONTENT ========== -->
+    
     <main>
-        <!-- Page Header -->
-        <section class="page-header text-center">
+        <section class="page-header text-center" data-aos="fade-in">
             <div class="container">
                 <h1 class="display-4 fw-bold">Our Financial Services</h1>
                 <p class="lead">Simple, secure, and designed for your convenience.</p>
             </div>
         </section>
 
-        <!-- Detailed Services Section -->
         <section class="detailed-services py-5">
             <div class="container">
-                <!-- Service 1: Daily Savings -->
-                <div class="row align-items-center g-5 mb-5">
-                    <div class="col-lg-6">
-                        <img src="https://via.placeholder.com/600x400/00c853/FFFFFF?text=Daily+Savings" class="img-fluid rounded shadow" alt="Daily Savings">
-                    </div>
+                <div class="row align-items-center g-5 mb-5" data-aos="fade-right">
+                    <div class="col-lg-6"><img src="https://images.unsplash.com/photo-1521790797524-3f2025b8740d?q=80&w=2070&auto=format=fit=crop" class="img-fluid rounded shadow" alt="Daily Savings"></div>
                     <div class="col-lg-6">
                         <h2 class="section-title text-start">Daily Savings Collection</h2>
-                        <p>Our core service is designed for the active business owner. A dedicated agent from Unity MFI will visit your place of business daily to collect your savings. This ensures your earnings are deposited securely without interrupting your work. Every transaction is recorded in real-time on your online dashboard.</p>
-                        <ul class="list-unstyled service-features">
-                            <li><i class="feature-icon">✔</i> On-location collection for maximum convenience.</li>
-                            <li><i class="feature-icon">✔</i> Instant digital record of every deposit.</li>
-                            <li><i class="feature-icon">✔</i> Build your savings securely, day by day.</li>
-                        </ul>
+                        <p>Our core service is designed for the active business owner. A dedicated agent will visit your business daily to collect your savings, ensuring your earnings are deposited securely without interrupting your work. Every transaction is recorded in real-time on your online dashboard.</p>
                     </div>
                 </div>
-
-                <!-- Service 2: Easy Withdrawals -->
-                <div class="row align-items-center g-5 mb-5 flex-lg-row-reverse">
-                    <div class="col-lg-6">
-                        <img src="https://via.placeholder.com/600x400/0a4d9e/FFFFFF?text=Easy+Withdrawals" class="img-fluid rounded shadow" alt="Easy Withdrawals">
-                    </div>
+                <div class="row align-items-center g-5 mb-5 flex-lg-row-reverse" data-aos="fade-left">
+                    <div class="col-lg-6"><img src="https://images.unsplash.com/photo-1561414927-6d86591d0c4f?q=80&w=2070&auto=format=fit=crop" class="img-fluid rounded shadow" alt="Easy Withdrawals"></div>
                     <div class="col-lg-6">
                         <h2 class="section-title text-start">Hassle-Free Withdrawals</h2>
-                        <p>Accessing your money should be simple. With your Unity MFI account, you can request a withdrawal through your online dashboard. Once requested, you can coordinate with your assigned agent to receive your funds at a convenient time and location. Our goal is to make your funds accessible when you need them.</p>
-                        <ul class="list-unstyled service-features">
-                            <li><i class="feature-icon">✔</i> Initiate withdrawal requests online.</li>
-                            <li><i class="feature-icon">✔</i> Coordinate directly with your trusted agent.</li>
-                            <li><i class="feature-icon">✔</i> Secure and verified transaction process.</li>
-                        </ul>
+                        <p>Accessing your money should be simple. Request a withdrawal through your online dashboard, and your assigned agent will contact you to arrange a convenient and secure cash delivery.</p>
                     </div>
                 </div>
-
-                <!-- Service 3: Mobile Money Integration -->
-                <div class="row align-items-center g-5">
+                <div class="row align-items-center g-5" data-aos="fade-right">
+                    <div class="col-lg-6"><img src="https://images.unsplash.com/photo-1639755243884-6a670992336c?q=80&w=1932&auto=format=fit=crop" class="img-fluid rounded shadow" alt="Mobile Money"></div>
                     <div class="col-lg-6">
-                        <img src="https://via.placeholder.com/600x400/ff9800/FFFFFF?text=Mobile+Money" class="img-fluid rounded shadow" alt="Mobile Money Integration">
-                    </div>
-                    <div class="col-lg-6">
-                        <h2 class="section-title text-start">Mobile Money Deposits</h2>
-                        <p>For added flexibility, you can make deposits using Mobile Money (MTN, Orange). Simply log into your dashboard, indicate the amount you are sending, and provide the transaction reference number. Our administrative team will then verify the transaction and credit your account. It's a convenient way to add to your savings anytime.</p>
-                         <ul class="list-unstyled service-features">
-                            <li><i class="feature-icon">✔</i> Log deposits from anywhere.</li>
-                            <li><i class="feature-icon">✔</i> Secure manual verification by our team.</li>
-                            <li><i class="feature-icon">✔</i> Keep your savings growing even outside business hours.</li>
-                        </ul>
+                        <h2 class="section-title text-start">Mobile Money Integration</h2>
+                        <p>For added flexibility, you can make deposits using Mobile Money (MTN, Orange). Simply log into your dashboard, indicate the amount sent, and provide the transaction reference number. Our administrative team will then verify the transaction and credit your account.</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- ========== FOOTER ========== -->
     <footer class="footer">
-        <div class="container text-center">
-            <p>&copy; 2025 Unity Microfinance & Credit Union. All Rights Reserved.</p>
-        </div>
+        <div class="container text-center"><p>&copy; 2025 Unity Microfinance & Credit Union. All Rights Reserved.</p></div>
     </footer>
 
-    <!-- Bootstrap JavaScript Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
-    <!-- Firebase SDKs -->
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
-
-    <!-- Firebase Configuration & Initialization -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script src="js/firebase-config.js"></script>
-    <script>
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      const auth = firebase.auth();
-      const db = firebase.firestore();
-    </script>
-    
-    <!-- Your Custom JavaScript -->
+    <script>firebase.initializeApp(firebaseConfig);</script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
     <script src="js/main.js"></script>
 </body>
 </html>
