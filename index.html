@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unity Microfinance & Credit Union</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Unity MFI</a>
+        <a class="navbar-brand" href="index.html">Unity MFI<span class="dot">.</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
@@ -19,7 +19,7 @@
             <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
             <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
           </ul>
-          <a href="client-login.html" class="btn btn-login d-none d-lg-block">Client Login</a>
+          <a href="client-login.html" class="btn btn-main d-none d-lg-block">Client Portal</a>
         </div>
       </div>
     </nav>
@@ -27,31 +27,58 @@
     <main>
         <section class="hero-section text-center">
             <div class="container" data-aos="fade-up">
-                <h1 class="display-3">Empowering Local Businesses in Cameroon</h1>
-                <p class="lead my-4 fs-4">Your trusted partner for daily savings and financial growth. Join us to build a better financial future, one day at a time.</p>
-                <a href="client-registration.html" class="btn hero-btn">Register Today</a>
+                <h1 class="display-3 fw-bold">Financial Growth for Cameroon's Entrepreneurs</h1>
+                <p class="lead my-4 fs-4">Secure daily savings, easy access to your funds, and a trusted partner dedicated to your success.</p>
+                <a href="client-registration.html" class="btn hero-btn fs-5">Start Your Savings Journey</a>
             </div>
         </section>
 
-        <section class="services-highlight-section py-5">
-            <div class="container text-center">
-                <h2 class="section-title mb-5" data-aos="fade-up">Our Core Services</h2>
-                <div class="row g-4">
+        <section id="why-us" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center" data-aos="fade-up">Why Partner With Unity MFI?</h2>
+                <div class="row g-4 text-center">
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                        <div class="service-card">
-                            <h3 class="h4">Daily Savings</h3><p>Securely save your daily earnings with our dedicated agents who come to you.</p>
-                        </div>
+                        <div class="icon-box"><i class="bi bi-shield-check"></i></div>
+                        <h4>Secure & Trusted</h4><p>Your savings are protected with industry-standard security and a transparent process.</p>
                     </div>
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                        <div class="service-card">
-                            <h3 class="h4">Easy Withdrawals</h3><p>Access your funds quickly and conveniently when you need them the most.</p>
-                        </div>
+                        <div class="icon-box"><i class="bi bi-people-fill"></i></div>
+                        <h4>Community Focused</h4><p>We are built by Cameroonians, for Cameroonians. Your growth is our mission.</p>
                     </div>
                     <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-card">
-                            <h3 class="h4">Mobile Money Ready</h3><p>Initiate deposits easily using your preferred mobile money service.</p>
-                        </div>
+                        <div class="icon-box"><i class="bi bi-phone-vibrate"></i></div>
+                        <h4>Digital Convenience</h4><p>Manage your account, log deposits, and request withdrawals from anywhere, anytime.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="py-5 bg-white">
+            <div class="container">
+                 <h2 class="section-title text-center" data-aos="fade-up">Simple Steps to Success</h2>
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6" data-aos="fade-right">
+                        <img src="https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?q=80&w=2072&auto=format=fit=crop" class="img-fluid rounded shadow-lg" alt="Business Meeting">
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-left">
+                        <div class="d-flex mb-4"><div class="icon-box fs-1 me-3">1</div><div><h4>Register Online</h4><p>Create your secure account in minutes with our simple registration form.</p></div></div>
+                        <div class="d-flex mb-4"><div class="icon-box fs-1 me-3">2</div><div><h4>Start Saving Daily</h4><p>Our agents visit you to collect savings, or you can deposit via Mobile Money.</p></div></div>
+                        <div class="d-flex"><div class="icon-box fs-1 me-3">3</div><div><h4>Watch Your Business Grow</h4><p>Access your funds when needed and build a strong financial foundation for the future.</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="testimonials" class="py-5">
+            <div class="container">
+                <h2 class="section-title text-center" data-aos="fade-up">Trusted by Entrepreneurs Like You</h2>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"><div class="testimonial-card text-center"><img src="https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=2071&auto=format=fit=crop" class="rounded-circle mx-auto mb-3" alt="Client"><p class="lead">"Unity MFI has changed my business. The daily collection is so convenient, and I can finally save without worry."</p><div class="stars mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><h5>- John T., Douala Market</h5></div></div>
+                        <div class="carousel-item"><div class="testimonial-card text-center"><img src="https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?q=80&w=1780&auto=format=fit=crop" class="rounded-circle mx-auto mb-3" alt="Client"><p class="lead">"The online dashboard is amazing! I can track all my savings easily on my phone. Highly recommended."</p><div class="stars mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div><h5>- Amina B., Yaoundé Store Owner</h5></div></div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
                 </div>
             </div>
         </section>
@@ -65,10 +92,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-    <script src="js/firebase-config.js"></script>
-    <script>firebase.initializeApp(firebaseConfig);</script>
+    <script src="js/firebase-init.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 1000, once: true });</script>
+    <script>AOS.init({ duration: 800, once: true });</script>
     <script src="js/main.js"></script>
 </body>
 </html>
